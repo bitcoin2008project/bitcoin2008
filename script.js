@@ -1,0 +1,3 @@
+function buyToken() {
+  alert(buy);
+}
