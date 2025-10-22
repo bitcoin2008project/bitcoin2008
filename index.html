@@ -1,41 +1,126 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 <head>
-    <title>bitcoin2008</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin2008 Whitepaper</title>
     <style>
-        /* Tambahan CSS clean & responsive */
-        body { font-family: Arial, sans-serif; margin:0; padding:0; }
-        #banner { display:flex; flex-wrap:wrap; align-items:center; padding:40px; background:#f4f4f4; }
-        #banner img { max-width:100%; height:auto; border-radius:8px; }
-        #banner-text { flex:1; min-width:300px; padding:20px; }
-        #abstract { padding:60px 20px; max-width:900px; margin:0 auto; line-height:1.7; }
-        #abstract img { width:100%; height:auto; margin-bottom:20px; border-radius:8px; }
-        h2 { margin-bottom:20px; font-size:2em; }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            color: #222;
+        }
+        #container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        h1, h2, h3 {
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        a.button-large {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #222;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 40px;
+        }
     </style>
 </head>
 <body>
 
-    <!-- Banner -->
-    <div id="banner">
-        <div id="banner-text">
-            <p>What if you could mine Bitcoin in 2008?</p>
-            <a href="#" class="button-large">the miner</a>
-        </div>
-        <div id="banner-image">
-            <img src="images/banner.jpg" alt="Banner Image">
-        </div>
-    </div>
+    <div id="container">
+        <h1>What if you could mine Bitcoin in 2008?</h1>
+        <p><strong>Whitepaper — October 2025</strong></p>
 
-    <!-- Abstract Full Width -->
-    <div id="abstract">
-        <img src="images/pic01.jpg" alt="Abstract Image">
         <h2>Abstract</h2>
         <p>
-            If you knew what Bitcoin would become — a trillion-dollar network born from just a few lines of code — would you have mined it back in 2008? Most people would say yes. Yet when opportunity appears, it rarely looks like what the future will prove it to be. This paper presents a decentralized system inspired by that paradox — a token protocol that recreates the early conditions of Bitcoin: open, fair, and belief-driven. It challenges the reader not to imagine the profits of hindsight, but to act with the conviction that early miners once had — when there was no guarantee, no market, and no recognition, only code and trust.
+            If you knew what Bitcoin would become today — a trillion-dollar network born from a few lines of open-source code — would you have mined it in 2008? Most people would say yes. Yet when opportunity appears, it rarely looks like what the future will prove it to be. This paper presents a decentralized system inspired by that paradox — a token protocol that recreates the early conditions of Bitcoin: open, fair, and belief-driven. It challenges the reader not to imagine the profits of hindsight, but to act with the conviction that early miners once had — when there was no guarantee, no market, and no recognition, only code and trust.
         </p>
+
+        <h2>1. Introduction</h2>
+        <p>
+            Bitcoin’s origin was defined not by speculation, but by belief. Early miners participated in something that had no monetary value, trusting the logic of code rather than the noise of markets. This project recreates that early stage dynamic — through a structured token emission model that rewards early conviction and decentralizes value creation through a transparent liquidity pool. The system merges time-based halving with phased access through limited mining machines (miners), each representing a share of early participation in the network.
+        </p>
+
+        <h2>2. Token Overview</h2>
+        <p>
+            Token Supply: 1,100,000 (fixed, no inflation)<br>
+            Emission Model: Released in 10 phases<br>
+            Liquidity Mechanism: 100% of miner sales are injected directly into the liquidity pool.
+        </p>
+
+        <h2>3. Phase Distribution</h2>
+        <p>
+            The total supply of 1.1 million tokens is divided into 10 phases, each unlocking 100,000 tokens tied to miner NFT releases.
+        </p>
+        <p>
+            Phase | Miner Price (USD) | Miners Available | Tokens Released | Token per Miner<br>
+            1 | $200 | 1,000 | 100,000 | 100<br>
+            2 | $500 | 1,000 | 100,000 | 100<br>
+            3 | $1,000 | 1,000 | 100,000 | 100<br>
+            4–10 | Increasing progressively | 1,000 per phase | 100,000 each | 100
+        </p>
+
+        <h2>4. Mining Logic & Emission</h2>
+        <p>
+            Each miner functions as a self-contained emission generator. Reward structure per miner follows a monthly halving model:
+        </p>
+        <p>
+            Month | Reward per Miner | Notes<br>
+            1 | 30 Coins | Initial reward<br>
+            2 | 15 Coins | 1st halving<br>
+            3 | 7.5 Coins | 2nd halving<br>
+            4 | 3.75 Coins | 3rd halving<br>
+            5+ | Asymptotic decay | Until miner fully mined out
+        </p>
+        <p>
+            Rewards are calculated monthly, but are not instantly claimable. After each 30-day mining cycle, rewards enter a vesting phase that begins on day 31, releasing 1 coin per day to the miner’s balance until the full monthly reward is distributed.  
+            Example: Miner earns 30 coins in Month 1 → From Day 31 to Day 60, 1 coin/day is released. This creates a continuous emission flow, preventing instant dumps while maintaining predictable liquidity growth.
+        </p>
+
+        <h2>5. Liquidity System</h2>
+        <p>
+            Unlike typical token launches that allocate funds to founders or pre-mines, 100% of miner sales are directed into the liquidity pool (LP) on a decentralized exchange (DEX). Phase 1: $200,000 → fully injected into LP with initial token allocation. Subsequent phases repeat this process, increasing liquidity depth and stabilizing price growth. This model ensures that every dollar entering the system supports token value — aligning participant incentives with protocol sustainability.
+        </p>
+
+        <h2>6. Incentive Structure</h2>
+        <p>
+            The design rewards three key behaviors:<br>
+            1. Early Commitment: Lower miner price and higher emission yield in earlier phases.<br>
+            2. Sustained Participation: Continuous halving encourages long-term engagement.<br>
+            3. Responsible Vesting: The 1-coin-per-day release ensures gradual liquidity entry, reducing volatility and promoting healthy price discovery.
+        </p>
+
+        <h2>7. Governance & Fairness</h2>
+        <p>
+            No team allocation, no pre-mine, no private sale. Smart contract code is immutable after deployment. Every token entering circulation originates from miner rewards or liquidity pairing events. Governance decisions (if any) will be conducted through community consensus once 50% of total supply is mined. This ensures the ecosystem remains decentralized and immune to central control or manipulation.
+        </p>
+
+        <h2>8. Economic Simulation</h2>
+        <p>
+            At Phase 1, miner entry cost = $200. 1000 miners = $200,000 added to liquidity pool. With 100,000 tokens released, initial LP ratio ≈ $2.00 per token equivalent value. As later phases inject higher liquidity ($500k, $1M, etc.), total liquidity depth compounds, creating natural upward pressure on token price without requiring external capital. Because vesting limits daily emission, token supply growth remains smooth and measurable — balancing ecosystem expansion with price protection.
+        </p>
+
+        <h2>9. Philosophy</h2>
+        <p>
+            “If You Can Mine Bitcoin in 2008, Will You?” is not nostalgia — it’s a question of conviction. In 2008, mining Bitcoin cost time and electricity. Today, it costs understanding and courage. This project rewards those who act not because everyone agrees, but because they see the pattern — that belief, structured in code, becomes value over time. Each miner is not just a machine — it’s a time capsule of conviction.
+        </p>
+
+        <h2>10. Conclusion</h2>
+        <p>
+            This paper outlines a decentralized mining economy that merges the original principles of Bitcoin with a fair, liquidity-driven token model. Each phase expands the ecosystem while reducing individual rewards — mirroring the logic of scarcity and adoption. The vesting mechanism completes the cycle, ensuring stability while maintaining the thrill of mining-driven discovery. Those who recognize opportunity in its early, uncertain form will shape what comes next. Just as in 2008, the question remains: If you can mine Bitcoin in 2008 — will you?
+        </p>
+
     </div>
 
 </body>
